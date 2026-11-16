@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1f2a44">
+    <title>Meu carrinho | Loja do Alexandre</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="loja.js" defer></script>
+</head>
+<body data-page="carrinho">
+    <header class="topo">
+        <div class="topo-conteudo">
+            <a class="logo" href="index.html">Loja do Alexandre</a>
+            <nav class="menu" aria-label="Navegação principal">
+                <a href="index.html">Produtos</a>
+                <a href="carrinho.html" aria-current="page">Carrinho <span class="contador-carrinho" data-cart-count>0</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="introducao introducao-carrinho">
+            <p class="etiqueta">Seu pedido</p>
+            <h1>Meu carrinho</h1>
+        </section>
+        <div class="carrinho">
+            <section class="lista" data-cart-items aria-label="Itens no carrinho" aria-live="polite"></section>
+            <aside class="resumo" data-cart-summary aria-label="Resumo do pedido"></aside>
+        </div>
+    </main>
+</body>
+</html>
